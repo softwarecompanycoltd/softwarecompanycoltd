@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+template, [hidden] {
+  display: none !important;
+}
+
+a {
+  background-color: transparent;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+  text-decoration: underline;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+small {
+  font-size: 90%;
+}
+
+blockquote {
+  margin: 0;
+}
+
+ul, ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul ol, ul ol ol, ol ul ol, ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+dd {
+  margin-left: 0;
+}
+
+tt, code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.octicon {
+  vertical-align: text-bottom;
+}
+
+.anim-fade-in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.anim-fade-in.fast {
+  animation-duration: 300ms;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim-fade-out {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.anim-fade-out.fast {
+  animation-duration: 0.3s;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.anim-fade-up {
+  opacity: 0;
+  animation-name: fade-up;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0.8;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-fade-down {
+  animation-name: fade-down;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+}
+
+.anim-grow-x {
+  width: 0%;
+  animation-name: grow-x;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+}
+
+@keyframes grow-x {
+  to {
+    width: 100%;
+  }
+}
+
+.anim-shrink-x {
+  animation-name: shrink-x;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes shrink-x {
+  to {
+    width: 0%;
+  }
+}
+
+.anim-scale-in {
+  animation-name: scale-in;
+  animation-duration: 0.15s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0.13, 1.5);
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.anim-pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.anim-pulse-in {
+  animation-name: pulse-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes pulse-in {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.hover-grow {
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+}
+
+.hover-grow:hover {
+  transform: scale(1.025);
+}
+
+.border {
+  border: 1px #e1e4e8 solid !important;
+}
+
+.border-y {
+  border-top: 1px #e1e4e8 solid !important;
+  border-bottom: 1px #e1e4e8 solid !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.border-blue {
+  border-color: #0366d6 !important;
+}
+
+.border-blue-light {
+  border-color: #c8e1ff !important;
+}
+
+.border-green {
+  border-color: #34d058 !important;
+}
+
+.border-green-light {
+  border-color: #a2cbac !important;
+}
+
+.border-red {
+  border-color: #d73a49 !important;
+}
+
+.border-red-light {
+  border-color: #cea0a5 !important;
+}
+
+.border-purple {
+  border-color: #6f42c1 !important;
+}
+
+.border-yellow {
+  border-color: #d9d0a5 !important;
+}
+
+.border-gray-light {
+  border-color: #eaecef !important;
+}
+
+.border-gray-dark {
+  border-color: #d1d5da !important;
+}
+
+.border-black-fade {
+  border-color: rgba(27,31,35,0.15) !important;
+}
+
+.border-top {
+  border-top: 1px #e1e4e8 solid !important;
+}
+
+.border-right {
+  border-right: 1px #e1e4e8 solid !important;
+}
+
+.border-bottom {
+  border-bottom: 1px #e1e4e8 solid !important;
+}
+
+.border-left {
+  border-left: 1px #e1e4e8 solid !important;
+}
+
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+.border-right-0 {
+  border-right: 0 !important;
+}
+
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.border-left-0 {
+  border-left: 0 !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+.rounded-1 {
+  border-radius: 3px !important;
+}
+
+.rounded-2 {
+  border-radius: 6px !important;
+}
+
+.rounded-top-0 {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.rounded-top-1 {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+
+.rounded-top-2 {
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6
+  
+    </style>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>softwarecompanycoltd | Config files for my GitHub profile.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="softwarecompanycoltd" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Config files for my GitHub profile." />
+<meta property="og:description" content="Config files for my GitHub profile." />
+<link rel="canonical" href="http://softwarecompanycoltd.com/README.html" />
+<meta property="og:url" content="http://softwarecompanycoltd.com/README.html" />
+<meta property="og:site_name" content="softwarecompanycoltd" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="softwarecompanycoltd" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Config files for my GitHub profile.","headline":"softwarecompanycoltd","url":"http://softwarecompanycoltd.com/README.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=bcfb92f8ef4be1c14f926cfb1b7edd20fe80200c">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://softwarecompanycoltd.com/">softwarecompanycoltd</a></h1>
+      
+
+      <hr />
+<h1 id="️-the-software-company-team">⚙️ THE SOFTWARE COMPANY TEAM</h1>
+
+<p><strong><code class="language-plaintext highlighter-rouge">🧑The Founder of The Company (C.E.O) : KarmanMajd</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🇲🇦 From Morocco ✅</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🇺🇸 American Corporation Project</code></strong></p>
+
+<h1 id="-introduction">🚀 INTRODUCTION</h1>
+
+<p>Hi 👋 😊 Welcome to Our Company, I’m Glad To See you, and in our Company we welcome every new or ancient user</p>
+
+<p align="left">
+      <a href="https://www.youtube.com/c/fknight?sub_confirmation=1">
+         <img alt="youtube subscribers" title="Subscribe to my YouTube channel" src="https://custom-icon-badges.demolab.com/youtube/channel/subscribers/UC2WHjPDvbE6O328n17ZGcfg?color=%23E05D44&amp;label=SUBSCRIBE&amp;logo=video&amp;logoColor=white&amp;style=for-the-badge&amp;labelColor=CE4630" /></a> 
+      <a href="https://www.youtube.com/c/fknight">
+         <img alt="youtube views" title="YouTube views" src="https://custom-icon-badges.demolab.com/youtube/channel/views/UC2WHjPDvbE6O328n17ZGcfg?color=%23E1AD0E&amp;logo=eye&amp;logoColor=white&amp;style=for-the-badge&amp;labelColor=C79600" /></a> 
+      <a href="https://github.com/ForrestKnight?tab=followers">
+         <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/ForrestKnight?color=236ad3&amp;labelColor=1155ba&amp;style=for-the-badge&amp;logo=person-add&amp;label=Follow&amp;logoColor=white" /></a>
+      <a href="https://github.com/ForrestKnight?tab=repositories&amp;sort=stargazers">
+         <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.demolab.com/github/stars/ForrestKnight?color=55960c&amp;style=for-the-badge&amp;labelColor=488207&amp;logo=star" /></a>
+   </p>
+
+<hr />
+
+<h1 id="-description">🧭 DESCRIPTION</h1>
+
+<p>This Company Stands for a scientific technical revolution in the software industry and her Component.
+So don’t miss this opportunity for exploring another world to develop your technical knowledge.
+Software Company Co., Ltd is a pioneering tech company at the forefront of innovation, dedicated to shaping the future through cutting-edge technological developments. With a relentless commitment to excellence, we specialize in creating transformative solutions that revolutionize industries. Our team, led by visionaries in the tech space, harnesses the power of artificial intelligence, robotics, and advanced software to drive progress.
+At Software Company Co., Ltd, we pride ourselves on pushing boundaries and redefining possibilities. Our portfolio includes groundbreaking projects that seamlessly blend creativity and functionality. We are a trailblazer in the field of technological advancement, constantly pushing the envelope to deliver products and services that exceed expectations.
+In the fast-paced landscape of tech, Software Company Co., Ltd stands out as a beacon of innovation. Our commitment to sustainability and ethical practices underscores every endeavor, ensuring a positive impact on both society and the environment. As a global player, we strive to shape a connected world where technology enhances lives and transforms experiences.
+At the core of Software Company Co., Ltd’s ethos is a passion for solving complex challenges through ingenious solutions. Whether it’s developing state-of-the-art software platforms, engineering futuristic hardware, or pioneering breakthroughs in artificial intelligence, we are relentless in our pursuit of pushing technology’s boundaries.
+In essence, Software Company Co., Ltd is not just a tech company; it’s a catalyst for progress, a driving force behind the evolution of technology, and a trailblazer in shaping a future where innovation knows no bounds.</p>
+
+<p>#</p>
+<ul>
+  <li>
+    <h3 id="-our-company-website-pages-summary">📄 Our company Website Pages Summary</h3>
+  </li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">🏠 Home</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">⚙️ Sign In</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🚪 Sign Up</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🪪 Membership Request</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">ℹ️ About</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🥇 Our Team</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">📨 Contact</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🚉 Company Platforms</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🧑‍🤝‍🧑 Company Groups</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🆘 Help</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">⚖️ Terms and Policies of Use</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🔈 Ads</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">📰 News</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🫶 Donation</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">📦 Products</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🚧 Projects</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">📖 E-Books</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">📃 Documentations</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">💬 Assistance</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🔥 Blogs</code></strong></p>
+
+<ul>
+  <li>
+    <h3 id="-our-company-platforms-summary">🚉 Our company Platforms Summary</h3>
+  </li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">📺 Youtube</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">📷 Instagram</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">↗️ Telegram</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">🟩 Whatsapp</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">⬛ Tiktok</code></strong></p>
+
+<ul>
+  <li>
+    <h3 id="-our-company-groups-summary">🧑‍🤝‍🧑 Our company Groups Summary</h3>
+  </li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">🟩 Whatsapp</code></strong>
+<strong><code class="language-plaintext highlighter-rouge">↗️ Telegram</code></strong></p>
+
+<h1 id="footer">FOOTER</h1>
+
+<p>Welcome to Our COmpany! <a href="https://sites.google.com/view/software-company-co-ltd/home?authuser=0">See Our Graphical Updated Website</a></p>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
