@@ -7,13 +7,15 @@
 
 # 🚀 INTRODUCTION
 
-Hi 👋 😊 Welcome to Our Company, I'm Glad To See you, and in our Company we welcome every new or ancient user 
-
+   <p align="center">
+      <h3>Discover New World Of Inovation With No Limits</h3>
+   </p>
+   
    <p align="left">
       <a href="https://www.youtube.com/@SoftwareCompany-g2d/">
          <img alt="youtube subscribers" title="Subscribe to my YouTube channel" src="https://custom-icon-badges.demolab.com/youtube/channel/subscribers/UC2WHjPDvbE6O328n17ZGcfg?color=%23E05D44&label=SUBSCRIBE&logo=video&logoColor=white&style=for-the-badge&labelColor=CE4630" style="border-raduis: 6px; border-color: #00a2e8;"></a> 
       <a href="https://www.youtube.com/@SoftwareCompany-g2d/">
-         <img alt="youtube views" title="YouTube views" src="https://custom-icon-badges.demolab.com/youtube/channel/views/UC2WHjPDvbE6O328n17ZGcfg?color=%23E1AD0E&logo=eye&logoColor=white&style=for-the-badge&labelColor=C79600" style="border-raduis: 6px; border-color: #00a2e8;"></a> 
+         <img alt="youtube views" title="YouTube views" src="https://custom-icon-badges.demolab.com/youtube/channel/views/UC2WHjPDvbE6O328n17ZGcfg?color=%23E1AD0E&logo=eye&logoColor=white&style=for-the-badge&labelColor=C79600" style="border: solid 1px; border-raduis: 6px; border-color: #00a2e8;"></a> 
       <a href="https://github.com/softwarecompanycoltd?tab=followers">
          <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/ForrestKnight?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white" style="border-raduis: 6px; border-color: #00a2e8;"></a>
       <a href="https://github.com/softwarecompanycoltd?tab=repositories">
@@ -22,6 +24,41 @@ Hi 👋 😊 Welcome to Our Company, I'm Glad To See you, and in our Company we 
 
 
 ***
+
+<html>
+   <html lang="en">
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+      <style>
+         .nunito-<uniquifier> {
+             font-family: "Nunito", sans-serif;
+             font-optical-sizing: auto;
+             font-weight: <weight>;
+             font-style: normal;
+         }
+      </style>
+   </head>
+   <body>
+      
+   </body>
+</html>
+
+
+<html>
+<head>
+</head>
+<body>
+   <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@software_based_company" data-unique-id="software_based_company" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" >
+      <section>
+         <a target="_blank" href="https://www.tiktok.com/@software_based_company?refer=creator_embed">@software_based_company</a>
+      </section>
+   </blockquote>
+   <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
+
 
 # 🧭 DESCRIPTION
 
@@ -70,9 +107,12 @@ In essence, Software Company Co., Ltd is not just a tech company; it's a catalys
 **`🟩 Whatsapp`**
 **`↗️ Telegram`**
 
-# FOOTER 
+# DESCRIPTION SUFIX
 
-Welcome to Our Company! [See Our Graphical Updated Website](https://sites.google.com/view/software-company-co-ltd/home?authuser=0).
+
+
+# FOOTER
+Welcome to Our Company! [See Our Graphical Updated Website 2019-2024](https://sites.google.com/view/software-company-co-ltd/home?authuser=0).
 
 
 Contact Info : [softwarecompanycoltd@gmail.com](mailto:softwarecompanycoltd@gmail.com).
