@@ -25,19 +25,6 @@
 
 ***
 
-<html>
-<head>
-</head>
-<body>
-   <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@software_based_company" data-unique-id="software_based_company" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" >
-      <section>
-         <a target="_blank" href="https://www.tiktok.com/@software_based_company?refer=creator_embed">@software_based_company</a>
-      </section>
-   </blockquote>
-   <script async src="https://www.tiktok.com/embed.js"></script>
-</body>
-</html>
-
 
 # 🧭 DESCRIPTION
 
