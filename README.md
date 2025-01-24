@@ -78,7 +78,10 @@ In essence, Software Company Co., Ltd is not just a tech company; it's a catalys
 
 
 # FOOTER
-Welcome to Our Company! [See Our Graphical Updated Website 2019-2024](https://sites.google.com/view/software-company-co-ltd/home?authuser=0).
+Welcome ! [2019 Old Website Version](https://sites.google.com/view/software-company-co-ltd/home?authuser=0).
+
+
+Welcome ! [2025 Newest Website Version](https://softwarecompanycoltd.pages.dev/).
 
 
 Contact Info : [softwarecompanycoltd@gmail.com](mailto:softwarecompanycoltd@gmail.com).
